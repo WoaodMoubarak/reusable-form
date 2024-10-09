@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import ReusableForm from './components/ReusableForm';
+import fields from './formFields.json'; // If you used an external JSON file
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-function App() {
+const App = () => {
+  const handleFormSubmit = (data) => {
+    console.log('Form Data: ', data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Reusable Form</h1>
+      <ReusableForm fields={fields} onSubmit={handleFormSubmit} />
     </div>
   );
-}
+};
 
 export default App;
+

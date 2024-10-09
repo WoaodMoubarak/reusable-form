@@ -1,0 +1,63 @@
+[
+  {
+    "name": "username",
+    "type": "text",
+    "label": "Username",
+    "gridLayout": "col-6",
+    "validations": {
+      "required": true,
+      "minLength": 3
+    }
+  },
+  {
+    "name": "age",
+    "type": "number",
+    "label": "Age",
+    "gridLayout": "col-6",
+    "validations": {
+      "required": true,
+      "min": 18
+    }
+  },
+  {
+    "name": "gender",
+    "type": "radio",
+    "label": "Gender",
+    "options": ["Male", "Female"],
+    "gridLayout": "col-12",
+    "validations": {
+      "required": true
+    }
+  },
+  {
+    "name": "country",
+    "type": "select",
+    "label": "Country",
+    "options": ["United States", "Canada", "United Kingdom", "Australia", "India"],
+    "gridLayout": "col-12",
+    "validations": {
+      "required": true
+    }
+  },
+  {
+    "name": "subscribe",
+    "type": "checkbox",
+    "gridLayout": "col-12"
+  },
+  {
+    "name": "profilePicture",
+    "type": "file",
+    "label": "Profile Picture",
+    "gridLayout": "col-12"
+  },
+  {
+    "name": "satisfaction",
+    "type": "range",
+    "label": "Satisfaction (1-100)",
+    "gridLayout": "col-12",
+    "validations": {
+      "min": 1,
+      "max": 100
+    }
+  }
+]
