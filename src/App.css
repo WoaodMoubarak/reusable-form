@@ -1,4 +1,4 @@
-/* Center the form in the middle of the page */
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@ h1{
 }
 
 .form-check-inline .form-check-input {
-  margin-right: 10px; /* Add space between checkbox and text */
+  margin-right: 10px; 
 }
 
 /* Styling the labels */

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReusableForm from './components/ReusableForm';
-import fields from './formFields.json'; // If you used an external JSON file
+import fields from './formFields.json'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
