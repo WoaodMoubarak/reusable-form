@@ -4,8 +4,8 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 
+
 const ReusableForm = ({ fields, onSubmit }) => {
-  
   const validationSchema = yup.object().shape(
     fields.reduce((schema, field) => {
       if (field.validations?.required) {
